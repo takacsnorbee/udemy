@@ -7,6 +7,7 @@ I made this project, because I need practice. It is a responsive page, what was 
 - HTML
 - CSS
 - Media quire
+- JavaScript
 
 ## Live Version
 

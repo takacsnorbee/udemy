@@ -1,0 +1,142 @@
+*{
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+}
+
+.customer {
+  height: auto;
+  width: 100%;
+}
+
+#cust-1-img-container {
+  background: url(https://i.kinja-img.com/gawker-media/image/upload/s--MrNS_TGD--/c_scale,f_auto,fl_progressive,q_80,w_800/vcgyjv3whslzt7puprbn.jpg) no-repeat ;
+  background-size: cover;
+  height: 30vh;
+  width: 100%;
+}
+
+#cust-1 {
+  height: 15vh;
+  width: 100%;
+}
+
+#cust-1 h1, #cust-2 h1 {
+  font-size: 1.5rem;
+  text-align: center;
+  padding: .7rem;
+  color: rgb(193, 122, 34);
+}
+
+#cust-1 small, #cust-2 small{
+  font-size: 0.9rem;
+  color: rgb(145, 141, 136);
+  padding: 0 10px;
+}
+
+#cust-1 p, #cust-2 p {
+  text-align: justify;
+  margin-top: .6rem;
+  padding: 0 10px;
+}
+
+#cust-2-img-container {
+  background: url(https://i.kinja-img.com/gawker-media/image/upload/s--YvFyGlSy--/c_scale,f_auto,fl_progressive,q_80,w_800/frmzfgflbnjybwx0bjm7.jpg) no-repeat 50%;
+  background-size: cover;
+  height: 30vh;
+  width: 100%;
+}
+
+#cust-2 {
+  height: 15vh;
+  width: 100%;
+}
+
+#cust-1-img-container figcaption, #cust-2-img-container figcaption{
+  height: 5vh;
+  background-color: rgba(145, 141, 136, .5);
+  position: relative;
+  top: 25vh;
+  font-size: .8rem;
+  padding: .7rem;
+} 
+
+/* media quire */
+
+@media (min-width:480px) {
+  #cust-1-img-container, #cust-2-img-container {
+    background-position: top;
+  }
+  #cust-1-img-container figcaption, #cust-2-img-container figcaption {
+    padding: 1rem;
+  }
+}
+
+@media (min-width:720px) {
+  #cust-1-img-container, #cust-1,
+  #cust-2-img-container, #cust-2 {
+    width: 40%;
+    display: inline-block;
+  }
+  #cust-1-img-container, #cust-2-img-container {
+    margin: 10px 40px;
+  }
+  #cust-1, #cust-2 {
+    vertical-align: middle;
+    padding-top: 5rem;
+    margin-left: 1rem;
+  }
+  #cust-1-img-container figcaption, #cust-2-img-container figcaption {
+    padding: .5rem;
+  }
+  #cust-2-img-container {
+    background-position: 70%;
+  }
+  #cust-1 h1, #cust-2 h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  #cust-1 p, #cust-2 p {
+    font-size: 1.3rem;
+    line-height: 1.8rem;
+  }
+  #cust-2-img-container {
+    float: right;
+    margin-right: 3rem;
+  }
+  #cust-2, #cust-1 {
+    margin-left: 2.5rem;
+    padding-top: 5rem;
+  }
+  #cust-2 {
+    padding-top: 3rem;
+  }
+  .customer {
+    margin-bottom: 2rem;
+  }
+  footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+}
+
+@media (min-width:1000px) {
+  #cust-1-img-container, #cust-2-img-container {
+    height: 35vh;
+    width: 45vw;
+  }
+  #cust-1-img-container figcaption, #cust-2-img-container figcaption {
+    top: 30vh;
+  }
+  #cust-1 h1, #cust-2 h1 {
+    font-size: 2.5rem;
+  }
+}
+
+
+
+

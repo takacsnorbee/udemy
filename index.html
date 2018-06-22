@@ -7,16 +7,25 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css">
   <meta name="viewport" content="width=device-width">
   <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="shared.css">
+  <script src="shared.js"></script>
 </head>
 <body>
+  <div id="backdrop">
+    <div id="ask">
+      <h1 id="ask-h1">Do you want to<br> continue?</h1>
+      <a id="yes" href="#">Yes!</a>
+      <a id="no" onclick="functionNo()" >No!</a>
+    </div>
+  </div>
   <header>
     <div id="header-img">
-      <a id="header-img-link" href="#"><img id="header-img-pic" src="https://nintenpedia.com/wp-content/uploads/uhost-4.jpg"></a>
+      <a id="header-img-link" href="https://takacsnorbee.github.io/udemy/"><img id="header-img-pic" src="https://nintenpedia.com/wp-content/uploads/uhost-4.jpg"></a>
     </div>
     <nav id="nav">
       <ul id="nav-list">
         <li class="nav-list-item"><a href="#">Packaging</a></li>
-        <li class="nav-list-item"><a href="#">Customers</a></li>
+        <li class="nav-list-item"><a href="customers.html">Customers</a></li>
         <li class="nav-list-item" id="hosting-btn"><a href="#">Start Hosting</a></li>
       </ul>
     </nav>
@@ -37,7 +46,7 @@
           <li>10 GB Storage</li>
           <li>Basic Support</li>
         </ul>
-        <button>CHOOSE PLAN</button>
+        <button onclick="choosePlan()" >CHOOSE PLAN</button>
       </div>
       <div class="plan" id="plus">
         <h1 id="recommend-h1">RECOMMEND</h1>
@@ -50,7 +59,7 @@
           <li>100 GB Storage</li>
           <li>Plus Support</li>
         </ul>
-        <button>CHOOSE PLAN</button>
+        <button onclick="choosePlan()">CHOOSE PLAN</button>
       </div>
       <div class="plan">
         <h3>PREMIUM</h3>
@@ -62,7 +71,7 @@
           <li>Unlimited Storage</li>
           <li>Priority Support</li>
         </ul>
-        <button>CHOOSE PLAN</button>
+        <button onclick="choosePlan()">CHOOSE PLAN</button>
       </div>
     </article>
   </main>
