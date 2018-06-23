@@ -1,0 +1,102 @@
+*{
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  background: url('https://c.pxhere.com/photos/71/2c/laptop_old_telephone_phone_vintage_notebook_desk_business_coffee-624855.jpg!d') no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.pack {
+  height: 30vh;
+  width: 100%;
+  border: 3px solid #193311;
+  text-align: center;
+  background: rgba(189, 219, 179, .7);
+}
+
+.pack h2 {
+  font-size: 1.4rem;
+  margin: 1.5rem auto;
+  font-weight: bold;
+}
+
+.pack h3 {
+  font-size: 1rem;
+  margin: 1rem auto;
+  color: rgb(70, 72, 73);
+}
+
+.pack p {
+  font-size: .8rem;
+  border: 1px solid #193311;
+  margin: 2rem;
+  padding: 1.5rem;
+  background-color: white;
+}
+
+.pack:hover {
+  border-color: chocolate;
+}
+
+/* media quire */
+
+@media (min-width:480px) {
+  .pack p{
+    width: 70%;
+    margin: 2rem auto;
+  }
+  .pack {
+    height: 30%;
+    width: 80%;
+    margin: 2rem auto;
+  }
+  footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+}
+
+@media (min-width:720px) {
+  #plan-1, #plan-3 {
+    margin-left: 0;
+  }
+  #plan-2 {
+    margin-right: 0;
+  }
+  .pack {
+    text-align: left;
+    padding-left: 2rem;
+  }
+  #plan-2 {
+    text-align: right;
+    padding-right: 2rem;
+  }
+  .pack p {
+    width: 90%;
+    margin-left: 0;
+  }
+  #plan-2 p {
+    margin-right: 0;
+  }/*?*/
+}
+
+@media (min-width:1000px) {
+  .pack h2 {
+    font-size: 1.8rem;
+  }
+  .pack h3 {
+    font-size: 1.2rem;
+  }
+  .pack p {
+    font-size: 1.1rem;
+  }
+}
+
+
+
+

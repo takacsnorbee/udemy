@@ -6,8 +6,8 @@
   <meta lang="en">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css">
   <meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" href="form.css">
   <link rel="stylesheet" href="shared.css">
-  <link rel="stylesheet" href="customers.css">
   <script src="shared.js"></script>
   <link rel="icon" href=" https://nintenpedia.com/wp-content/uploads/uhost-4.jpg">
 </head>
@@ -15,11 +15,11 @@
   <div id="backdrop">
     <div id="ask">
       <h1 id="ask-h1">Do you want to<br> continue?</h1>
-      <a id="yes" href="form.html">Yes!</a>
+      <a id="yes" href="#">Yes!</a>
       <a id="no" onclick="functionNo()" >No!</a>
     </div>
   </div>
-   <header>
+  <header>
     <div id="header-img">
       <a id="header-img-link" href="https://takacsnorbee.github.io/udemy/"><img id="header-img-pic" src="https://nintenpedia.com/wp-content/uploads/uhost-4.jpg"></a>
     </div>
@@ -32,26 +32,30 @@
     </nav>
   </header>
   <main>
-    <article class="customer">
-      <div id="cust-1-img-container">
-        <figcaption>Source: https://local.theonion.com/i-m-going-to-hell-for-laughing-at-this-meme-says-man-1823132662</figcaption><!--it is placed just because of potentional copyright issue-->
+    <h1 id="main-h1">Awesome! Let's dive right in!</h1>
+    <form id="form">
+      <fieldset>
+        <legend>Personal info:</legend>
+        <label for="title">Title</label>
+        <select>
+         <option value="mr">Mr.</option>
+          <option value="ms">Ms.</option>
+        </select>
+        <label for="first-name">First name</label>
+        <input type="text" name="first-name">
+        <label for="last-name">Last name</label>
+        <input type="text" name="last-name">
+      </fieldset>
+      <div id="other-data">
+        <label for="email">E-Mail</label>
+        <input type="email" name="email">
+        <label for="password">Password</label>
+        <input type="password" name="password">
+        <input type="checkbox" name="checkbox">
+        <label for="agree-terms">Agree to <a href="#">Terms &amp; Conditions</a></label>
+        <button type="submit">Sign Up</button>
       </div>
-      <div id="cust-1">
-        <h1>Rob Statham</h1>
-        <small>Founder of tech-analysis.com</small>
-        <p>uHost helped me realize my project with a highly constrained budget in like no time.</p>
-      </div>
-    </article>
-    <article class="customer">
-      <div id="cust-2-img-container">
-        <figcaption>Source: https://entertainment.theonion.com/man-wondering-when-oceans-8-trailer-going-to-show-fil-1821508514</figcaption>
-      </div>
-      <div id="cust-2">
-        <h1>Tom Mellow</h1>
-        <small>Hosts his private videos on uHost</small>
-        <p>I worked as a blogger and always looked for an integrated hosting and file storage solution. I found it in uHost</p>
-      </div>
-    </article>
+    </form>
   </main>
   <footer>
     <nav>
@@ -61,3 +65,4 @@
   </footer>
 </body>
 </html>
+

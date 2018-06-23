@@ -6,7 +6,7 @@
   <meta lang="en">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css">
   <meta name="viewport" content="width=device-width">
-  <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="packaging.css">
   <link rel="stylesheet" href="shared.css">
   <script src="shared.js"></script>
   <link rel="icon" href=" https://nintenpedia.com/wp-content/uploads/uhost-4.jpg">
@@ -32,49 +32,21 @@
     </nav>
   </header>
   <main>
-    <div id="article-img">
-      <h1>Get the freedom you deserve</h1>
-    </div>
-    <article>
-      <h1>Choose Your Plan</h1>
-      <div class="plan">
-        <h3>FREE</h3>
-        <h2>&#36;0/month</h2>
-        <h3>For hobby projects and small team</h3>
-        <ul>
-          <li>1 Workspace</li>
-          <li>Unlimited Traffic</li>
-          <li>10 GB Storage</li>
-          <li>Basic Support</li>
-        </ul>
-        <button onclick="choosePlan()" >CHOOSE PLAN</button>
-      </div>
-      <div class="plan" id="plus">
-        <h1 id="recommend-h1">RECOMMEND</h1>
-        <h3>PLUS</h3>
-        <h2>&#36;29/month</h2>
-        <h3>For ambitious projects</h3>
-        <ul>
-          <li>1 Workspace</li>
-          <li>Unlimited Traffic</li>
-          <li>100 GB Storage</li>
-          <li>Plus Support</li>
-        </ul>
-        <button onclick="choosePlan()">CHOOSE PLAN</button>
-      </div>
-      <div class="plan">
-        <h3>PREMIUM</h3>
-        <h2>&#36;99/month</h2>
-        <h3>Your enterprise solution</h3>
-        <ul>
-          <li>1 Workspace</li>
-          <li>Unlimited Traffic</li>
-          <li>Unlimited Storage</li>
-          <li>Priority Support</li>
-        </ul>
-        <button onclick="choosePlan()">CHOOSE PLAN</button>
-      </div>
-    </article>
+  <div onclick="choosePlan()" class="pack" id="plan-1">
+    <h2>Our PLUS Plan</h2>
+    <h3>The most popular choice of our customers.</h3>
+    <p>Benefit from increased storage and faster support to ensure that your mission-critical data and applications are always available!</p>
+  </div>
+  <div onclick="choosePlan()" class="pack" id="plan-2">
+    <h2>Our FREE Plan</h2>
+    <h3>An extremely solid start into our hosting world.</h3>
+    <p>Get started immediately at zero cost!</p>
+  </div>
+  <div onclick="choosePlan()" class="pack" id="plan-3">
+    <h2>Our PREMIUM Plan</h2>
+    <h3>All your enterprise needs. Instant support, guaranteed utime.</h3>
+    <p>The best solution for small to large enterproses. Because hostings shouldn't be in the way!</p>
+  </div>
   </main>
   <footer>
     <nav>
